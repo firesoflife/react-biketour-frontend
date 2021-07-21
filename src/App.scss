@@ -1,0 +1,34 @@
+// Global Resets
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1rem;
+	line-height: 1.6;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-family: 'Neuropol';
+	font-size: 4rem;
+}
+
+// Font Import
+@import './styles//fonts';
+
+// Page & Component Styles
+@import './styles/landingpage';
+@import './styles//countdown';

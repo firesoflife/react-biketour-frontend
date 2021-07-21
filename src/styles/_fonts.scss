@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'SpeedeasyItalic';
+	src: url('../fonts/SpeedeasyItalic.ttf');
+}
+
+$title: 'SpeedeasyItalic';
+
+@font-face {
+	font-family: 'Neuropol';
+	src: url('../fonts/Neuropol.ttf');
+}
+
+$sub-title: 'Neuropol', sans-serif;
+
+@font-face {
+	font-family: 'PlatNomor';
+	src: url('../fonts/PlatNomor.ttf');
+}
+
+$paragraph-font: 'PlatNomor', serif;

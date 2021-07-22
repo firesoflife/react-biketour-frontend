@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 // Pages
 import Home from './pages/Home';
 import About from './pages/About';
-import RacerMap from './pages/RacerMap.jsx';
+import RaceMap from './pages/RaceMap.jsx';
 
 function App() {
 	return (
@@ -14,7 +14,7 @@ function App() {
 			<Switch>
 				<Route path='/' exact component={Home} />
 				<Route path='/about' exact component={About} />
-				<Route path='/map' exact component={RacerMap} />
+				<Route path='/map' exact component={RaceMap} />
 			</Switch>
 		</div>
 	);

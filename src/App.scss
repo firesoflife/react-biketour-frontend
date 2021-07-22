@@ -5,6 +5,32 @@
 	box-sizing: border-box;
 }
 
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	text-decoration: none;
+	color: #ff4e00;
+}
+a:focus {
+	text-decoration: none;
+	color: rgb(196, 196, 4);
+}
+a:hover,
+a:active {
+	text-decoration: none;
+	color: #ff4e00;
+}
+// a {
+// 	text-decoration: none;
+// 	&:visited,
+// 	&:hover,
+// 	&:focus {
+// 		text-decoration: none;
+// 	}
+// }
+
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
@@ -30,5 +56,7 @@ h2 {
 @import './styles//fonts';
 
 // Page & Component Styles
+@import './styles//navbar';
 @import './styles/landingpage';
-@import './styles//countdown';
+@import './styles/countdown';
+@import './styles/racermap';

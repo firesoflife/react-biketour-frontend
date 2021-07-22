@@ -1,0 +1,53 @@
+nav {
+	font-family: Neuropol;
+	background: #333;
+	height: 8rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.7rem calc((100vw - 1200px) / 2);
+	z-index: 10;
+}
+
+.logo {
+	color: #ff4e00;
+	&:visited {
+		color: #ff4e00;
+	}
+}
+
+.navlink {
+	text-decoration: none;
+	color: #fff;
+	padding: 0 1.6rem;
+	height: 100%;
+	cursor: pointer;
+	font-size: 3rem;
+	&:active {
+		color: #ff4e00;
+	}
+}
+
+.bars {
+	display: none;
+	color: #fff;
+
+	@media screen and (max-width: 768px) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-100%, 75%);
+		font-size: 2.2rem;
+		cursor: pointer;
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	margin-right: -24px;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}

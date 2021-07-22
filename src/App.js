@@ -1,10 +1,21 @@
+import { Switch, Route } from 'react-router-dom';
 import './App.scss';
+// Components
+import Navbar from './components/Navbar';
+// Pages
 import Home from './pages/Home';
+import About from './pages/About';
+import RacerMap from './pages/RacerMap.jsx';
 
 function App() {
 	return (
 		<div className='App'>
-			<Home />
+			<Navbar />
+			<Switch>
+				<Route path='/' exact component={Home} />
+				<Route path='/about' exact component={About} />
+				<Route path='/map' exact component={RacerMap} />
+			</Switch>
 		</div>
 	);
 }

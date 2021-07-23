@@ -6,6 +6,9 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import RaceMap from './pages/RaceMap.jsx';
+import RacerProfiles from './pages/RacerProfiles';
+import Profile from './components/Profile';
+import SingleRacerProfile from './pages/SingleRacerProfile';
 
 function App() {
 	return (
@@ -15,6 +18,13 @@ function App() {
 				<Route path='/' exact component={Home} />
 				<Route path='/about' exact component={About} />
 				<Route path='/map' exact component={RaceMap} />
+				<Route path='/racers' exact component={RacerProfiles} />
+				<Route path='/racers/profile' exact component={Profile} />
+				<Route
+					path='/racers/profile/:id'
+					exact
+					component={SingleRacerProfile}
+				/>
 			</Switch>
 		</div>
 	);

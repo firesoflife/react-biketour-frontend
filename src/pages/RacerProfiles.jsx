@@ -10,7 +10,6 @@ const RacerProfiles = () => {
 			.get('http://localhost:4000/racers')
 			.then(resp => {
 				setRacers(resp.data);
-				console.log(resp.data);
 			})
 			.catch(resp => console.log(resp));
 	}, []);

@@ -4,8 +4,8 @@ import { FaAlignRight } from 'react-icons/fa';
 
 const Navbar = () => {
 	return (
-		<div>
-			<nav>
+		<nav>
+			<div className='nav-container'>
 				<NavLink to='/'>
 					<h1>Logo</h1>
 				</NavLink>
@@ -20,6 +20,9 @@ const Navbar = () => {
 					<NavLink className='navlink' activeClassName='active' to='/gallery'>
 						Gallery
 					</NavLink>
+					<NavLink className='navlink' activeClassName='active' to='/racers'>
+						Racer Profiles
+					</NavLink>
 					<NavLink className='navlink' activeClassName='active' to='/contest'>
 						Contest
 					</NavLink>
@@ -27,8 +30,8 @@ const Navbar = () => {
 						About
 					</NavLink>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	);
 };
 

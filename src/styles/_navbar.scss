@@ -3,16 +3,21 @@ nav {
 	background: #333;
 	height: 8rem;
 	display: flex;
-	justify-content: space-between;
 	padding: 0.7rem calc((100vw - 1200px) / 2);
 	z-index: 10;
 }
 
+.nav-container {
+	display: flex;
+	width: 90%;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
 .logo {
+	text-decoration: none;
 	color: #ff4e00;
-	&:visited {
-		color: #ff4e00;
-	}
 }
 
 .navlink {
@@ -21,7 +26,7 @@ nav {
 	padding: 0 1.6rem;
 	height: 100%;
 	cursor: pointer;
-	font-size: 3rem;
+	font-size: 2rem;
 	&:active {
 		color: #ff4e00;
 	}

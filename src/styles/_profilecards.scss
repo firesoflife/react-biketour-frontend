@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+// Colors
+$color-one: #1f2124;
+$color-two: #383a3f;
+$color-three: #ff4e00;
+$color-four: #f6b352;
+
+.header {
+	background: $color-two;
+	font-family: $main-font;
+	text-align: center;
+	color: #ff4e00;
+	padding: 8rem 8rem 1rem 8rem;
+
+	h1 {
+		font-size: 3.5rem;
+		text-shadow: 4px 4px 4px #000;
+	}
+
+	.subheader {
+		color: $color-four;
+		opacity: 75%;
+		padding: 0.8rem;
+		font-size: 2.7rem;
+		text-shadow: 2px 3px 5px #ccc;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.4rem;
+	width: 100%;
+	padding: 1.6rem;
+}
+.card-page {
+	background: $color-two;
+	height: 100%;
+	width: 100%;
+	font-family: $main-font;
+}
+
+.card-body {
+	background: $color-one;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	margin: 50px 20px 20px 20px;
+	padding: 20px;
+	text-align: center;
+	color: white;
+	float: left;
+	@media (max-width: 768px) {
+		margin: 10px 20px;
+		width: calc(100% - 40px);
+	}
+
+	.card-title {
+		font-size: 2rem;
+		color: #fff;
+	}
+
+	.profile-container {
+		margin: auto;
+		background: #333;
+		border-radius: 50%;
+		height: 18rem;
+		width: 18rem;
+	}
+
+	.icon {
+		margin: 50px 0;
+		svg {
+			width: 100px;
+			height: 100px;
+			path {
+				fill: $color-four;
+			}
+		}
+	}
+	.features {
+		ul {
+			padding: 0;
+			margin: 20px 0 50px 0;
+			list-style-type: none;
+			li {
+				margin: 10px 0;
+				font-size: 14px;
+				span {
+					border-bottom: 2px dotted $color-four;
+				}
+			}
+		}
+	}
+	.btn {
+		font-size: 2rem;
+		display: block;
+		background: $color-four;
+		color: white;
+		padding: 15px 20px;
+		margin: 20px 0;
+		border-radius: 5px;
+		box-shadow: rgba(0, 0, 0, 0.9);
+		transition: all 200ms ease-in-out;
+		text-decoration: none;
+		&:hover {
+			background: $color-three;
+		}
+
+		& .btn-link {
+			color: $color-two;
+			text-decoration: underline;
+		}
+	}
+}

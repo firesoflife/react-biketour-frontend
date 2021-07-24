@@ -1,14 +1,18 @@
 import React from 'react';
+import { IoBicycleOutline } from 'react-icons/io5';
 
 const Profile = props => {
 	return (
 		<div className='profile-wrapper'>
-			<h2 className='racer-bio'>
-				{props.firstname} {props.lastname}{' '}
-			</h2>
 			<div className='card'>
 				<div className='profile'>
-					<ion-icon name='bicycle'></ion-icon>
+					<div className='icon-name'>
+						<h3>{props.firstname}</h3>
+						<ion-icon name='bicycle'>
+							<IoBicycleOutline />
+						</ion-icon>
+					</div>
+
 					<div className='info-box'>
 						<h3 className='info-title'>Racer Info</h3>
 						<div className='line-break'></div>
@@ -19,6 +23,7 @@ const Profile = props => {
 						</div>
 						<div className='racer-state'>
 							<span className='lead'>Home State: </span>
+							<br />
 							{props.state}{' '}
 						</div>
 					</div>

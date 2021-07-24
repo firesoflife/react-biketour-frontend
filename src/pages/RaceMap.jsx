@@ -11,7 +11,7 @@ const RaceMap = props => {
 			.get('http://localhost:4000/racers')
 			.then(resp => {
 				setPosition(resp.data);
-				console.log(resp.data);
+				// console.log(resp.data);
 			})
 			.catch(resp => console.log(resp));
 	}, [position.length]);
@@ -41,12 +41,6 @@ const RaceMap = props => {
 					attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 					url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 				/>
-
-				{/* <Marker position={[42.983, -81.249]}>
-					<Popup>
-						A pretty CSS3 popup. <br /> Easily customizable.
-					</Popup>
-				</Marker> */}
 				{marker}
 			</MapContainer>
 		</div>

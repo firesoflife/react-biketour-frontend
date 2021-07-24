@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import axios from 'axios';
 import Profile from '../components/Profile';
+import ProfileCards from '../components/ProfileCards';
 
 const RacerProfiles = () => {
 	const [racers, setRacers] = useState([]);
@@ -16,7 +17,14 @@ const RacerProfiles = () => {
 
 	const grid = racers.map(racer => {
 		return (
-			<Profile
+			// <Profile
+			// 	key={racer.id}
+			// 	firstname={racer.f_name}
+			// 	lastname={racer.l_name}
+			// 	city={racer.city}
+			// 	state={racer.state}
+			// />
+			<ProfileCards
 				key={racer.id}
 				firstname={racer.f_name}
 				lastname={racer.l_name}
@@ -33,7 +41,9 @@ const RacerProfiles = () => {
 				<div className='subheader'>
 					Track the location of your favourite racer and get their bios!
 				</div>
-				<div className='grid'>{grid}</div>
+				<div className='card-page'>
+					<div className='grid'>{grid}</div>
+				</div>
 			</div>
 		</Fragment>
 	);

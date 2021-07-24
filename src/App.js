@@ -9,6 +9,7 @@ import RaceMap from './pages/RaceMap.jsx';
 import RacerProfiles from './pages/RacerProfiles';
 import Profile from './components/Profile';
 import SingleRacerProfile from './pages/SingleRacerProfile';
+import ProfileCards from './components/ProfileCards';
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 					exact
 					component={SingleRacerProfile}
 				/>
+				<Route path='/cards' exact component={ProfileCards} />
 			</Switch>
 		</div>
 	);

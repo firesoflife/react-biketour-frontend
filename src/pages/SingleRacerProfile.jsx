@@ -26,11 +26,11 @@ const SingleRacerProfile = props => {
 	}, []);
 	return (
 		<div>
-			<p>
+			<p className='text-test'>
 				{' '}
 				this is {racer.f_name} {racer.l_name}
 			</p>
-			<p>
+			<p className='text-test'>
 				She Lives in {racer.city}, {racer.state}
 			</p>
 		</div>

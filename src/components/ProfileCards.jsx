@@ -9,7 +9,7 @@ const ProfileCards = props => {
 				{props.firstname} {props.lastname}
 			</div>
 			<div className='profile-container'>
-				<div class='icon'>
+				<div className='icon'>
 					<IoBicycleOutline />
 					<p>
 						Profile Img <br /> Placeholder
@@ -17,7 +17,7 @@ const ProfileCards = props => {
 				</div>
 			</div>
 
-			<div class='features'>
+			<div className='features'>
 				<ul>
 					<li>
 						<span>City:</span> {props.city}
@@ -29,7 +29,7 @@ const ProfileCards = props => {
 				</ul>
 			</div>
 
-			<Link to={`/profile/racers/`} class='btn'>
+			<Link to={`/racers/profile/`} className='btn'>
 				Find <span className='btn-link'> {props.firstname} </span>on the Map
 			</Link>
 		</div>

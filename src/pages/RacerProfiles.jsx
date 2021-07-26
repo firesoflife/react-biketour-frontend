@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import axios from 'axios';
-import Profile from '../components/Profile';
 import ProfileCards from '../components/ProfileCards';
 
 const RacerProfiles = () => {

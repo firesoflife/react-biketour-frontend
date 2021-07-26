@@ -31,7 +31,7 @@ const ProfileCards = props => {
 			</div>
 
 			<Link to={`/racers/profile/${props.id}`} className='btn'>
-				Find <span className='btn-link'> {props.firstname} </span>on the Map
+				See <span className='btn-link'> {props.firstname}'s' </span>Full Profile
 			</Link>
 		</div>
 	);

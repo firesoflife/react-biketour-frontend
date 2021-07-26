@@ -16,13 +16,6 @@ const RacerProfiles = () => {
 
 	const grid = racers.map(racer => {
 		return (
-			// <Profile
-			// 	key={racer.id}
-			// 	firstname={racer.f_name}
-			// 	lastname={racer.l_name}
-			// 	city={racer.city}
-			// 	state={racer.state}
-			// />
 			<ProfileCards
 				key={racer.id}
 				id={racer.id}

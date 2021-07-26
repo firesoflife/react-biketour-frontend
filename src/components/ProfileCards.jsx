@@ -3,6 +3,7 @@ import { IoBicycleOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 const ProfileCards = props => {
+	console.log();
 	return (
 		<div className='card-body'>
 			<div className='card-title'>
@@ -29,7 +30,7 @@ const ProfileCards = props => {
 				</ul>
 			</div>
 
-			<Link to={`/racers/profile/`} className='btn'>
+			<Link to={`/racers/profile/${props.id}`} className='btn'>
 				Find <span className='btn-link'> {props.firstname} </span>on the Map
 			</Link>
 		</div>

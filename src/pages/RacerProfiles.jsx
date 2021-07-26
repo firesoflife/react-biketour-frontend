@@ -25,6 +25,7 @@ const RacerProfiles = () => {
 			// />
 			<ProfileCards
 				key={racer.id}
+				id={racer.id}
 				firstname={racer.f_name}
 				lastname={racer.l_name}
 				city={racer.city}

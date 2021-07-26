@@ -18,12 +18,16 @@ function App() {
 				<Route path='/about' exact component={About} />
 				<Route path='/map' exact component={RaceMap} />
 				<Route path='/racers' exact component={RacerProfiles} />
-				<Route path='/racers/profile/' exact component={SingleRacerProfile} />
+				{/* <Route path='/racers/profile/' exact component={SingleRacerProfile} /> */}
 				<Route
 					path='/racers/profile/:id'
 					exact
 					component={SingleRacerProfile}
 				/>
+				{/* <Route
+					path='/project/:id'
+					render={props => <SingleRacerProfile {...props} />}
+				/> */}
 			</Switch>
 		</div>
 	);

@@ -1,6 +1,6 @@
 .map-container {
 	border-top: 1px solid #ccc;
-	padding-top: 10rem;
+	padding-top: 5rem;
 	height: 100vh;
 	background: #333;
 	display: flex;
@@ -8,9 +8,12 @@
 }
 
 .title {
-	color: #ccc;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	color: #ff4e00;
+	padding: 8rem 8rem 1rem 8rem;
+	font-family: $title;
+	font-size: 3.5rem;
+	text-shadow: 4px 4px 4px #000;
 }
 
 .leaflet-container {

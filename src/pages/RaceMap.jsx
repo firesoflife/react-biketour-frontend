@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import axios from 'axios';
 
@@ -23,14 +24,23 @@ const RaceMap = props => {
 					key={racerPosition.id}
 					position={[racerPosition.lat, racerPosition.lng]}
 				>
-					<Popup>{racerPosition.f_name}</Popup>
+					<Popup>
+						<h3>
+							{racerPosition.f_name} {racerPosition.l_name}
+						</h3>
+						{/* <Link to=''>Go to {racerPosition.f_name}'s Bio</Link> */}
+						<Link to={`/racers/profile/${racerPosition.id}`} className='btn'>
+							See <span className='btn-link'> {racerPosition.f_name}'s' </span>
+							Full Profile
+						</Link>
+					</Popup>
 				</Marker>
 			</Fragment>
 		);
 	});
 
 	return (
-		<div>
+		<div className='map-container'>
 			<h1 className='title'>Track Your Favourite Riders</h1>
 			<MapContainer
 				center={[40.0149856, -105.2705456]}

@@ -1,3 +1,9 @@
+// Colors
+$color-one: #1f2124;
+$color-two: #383a3f;
+$color-three: #ff4e00;
+$color-four: #f6b352;
+
 // Global Resets
 * {
 	padding: 0;
@@ -19,7 +25,7 @@ a:hover {
 }
 a:focus {
 	text-decoration: none;
-	color: rgb(218, 218, 6);
+	color: $color-four;
 }
 a:hover,
 a:active {

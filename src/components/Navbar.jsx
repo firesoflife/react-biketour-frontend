@@ -14,7 +14,7 @@ const Navbar = () => {
 				</div>
 				<div className='menu'>
 					<NavLink className='navlink' activeClassName='active' to='/racers'>
-						Racer Profiles
+						Profiles
 					</NavLink>
 					<NavLink className='navlink' activeClassName='active' to='/map'>
 						Map

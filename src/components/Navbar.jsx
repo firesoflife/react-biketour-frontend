@@ -6,29 +6,33 @@ const Navbar = () => {
 	return (
 		<nav>
 			<div className='nav-container'>
-				<NavLink to='/'>
-					<h1>BCT</h1>
-				</NavLink>
-				<div className='bars'>
-					<FaAlignRight />
+				<div className='nav-left'>
+					<NavLink to='/'>
+						<h1>BCT</h1>
+					</NavLink>
 				</div>
-				<div className='menu'>
-					<NavLink className='navlink' activeClassName='active' to='/racers'>
-						Profiles
-					</NavLink>
-					<NavLink className='navlink' activeClassName='active' to='/map'>
-						Map
-						<i className='faBars'></i>
-					</NavLink>
-					<NavLink className='navlink' activeClassName='active' to='/gallery'>
-						Gallery
-					</NavLink>
-					<NavLink className='navlink' activeClassName='active' to='/contest'>
-						Contest
-					</NavLink>
-					<NavLink className='navlink' activeClassName='active' to='/about'>
-						About
-					</NavLink>
+				<div className='nav-right'>
+					<div className='bars'>
+						<FaAlignRight />
+					</div>
+					<div className='menu'>
+						<NavLink className='navlink' activeClassName='active' to='/racers'>
+							Profiles
+						</NavLink>
+						<NavLink className='navlink' activeClassName='active' to='/map'>
+							Map
+							<i className='faBars'></i>
+						</NavLink>
+						<NavLink className='navlink' activeClassName='active' to='/gallery'>
+							Gallery
+						</NavLink>
+						<NavLink className='navlink' activeClassName='active' to='/contest'>
+							Contest
+						</NavLink>
+						<NavLink className='navlink' activeClassName='active' to='/about'>
+							About
+						</NavLink>
+					</div>
 				</div>
 			</div>
 		</nav>

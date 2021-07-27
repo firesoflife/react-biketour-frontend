@@ -8,6 +8,7 @@ import About from './pages/About';
 import RaceMap from './pages/RaceMap.jsx';
 import RacerProfiles from './pages/RacerProfiles';
 import SingleRacerProfile from './pages/SingleRacerProfile';
+import ImagePage from './pages/ImagePage';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					exact
 					component={SingleRacerProfile}
 				/>
+				<Route path='/gallery' exact component={ImagePage} />
 			</Switch>
 		</div>
 	);

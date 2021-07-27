@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PhotoComp from './PhotoComp';
+import ImageGallery from '../components/ImageGallery';
 import { createApi } from 'unsplash-js';
 
 const api = createApi({
@@ -42,7 +42,7 @@ const Body = () => {
 				<ul className='columnUl'>
 					{data.response.results.map(photo => (
 						<li key={photo.id} className='li'>
-							<PhotoComp photo={photo} />
+							<ImageGallery photo={photo} />
 						</li>
 					))}
 				</ul>

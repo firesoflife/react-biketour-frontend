@@ -38,14 +38,14 @@ const Body = () => {
 		);
 	} else {
 		return (
-			<div className='feed'>
-				<ul className='columnUl'>
+			<div className='photopage-container'>
+				<div className='photo-grid'>
 					{data.response.results.map(photo => (
-						<li key={photo.id} className='li'>
+						<div key={photo.id} className='images'>
 							<ImageGallery photo={photo} />
-						</li>
+						</div>
 					))}
-				</ul>
+				</div>
 			</div>
 		);
 	}

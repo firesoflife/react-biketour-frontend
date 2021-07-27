@@ -13,10 +13,12 @@ nav {
 
 .nav-container {
 	display: flex;
+	flex-grow: none;
 	width: 90%;
 	align-items: center;
 	justify-content: space-between;
-	margin: 0 auto;
+	// margin: 0 auto;
+	margin-left: 5rem;
 }
 
 .logo {

@@ -1,0 +1,19 @@
+.photopage-container {
+	background: $color-one;
+	padding: 3rem;
+
+	& .photo-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+	}
+}
+
+.image-gallery-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery-images {
+	max-width: 90%;
+}

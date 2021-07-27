@@ -4,8 +4,8 @@ const PhotoComp = ({ photo }) => {
 	const { user, urls } = photo;
 
 	return (
-		<Fragment>
-			<img className='img' src={urls.regular} />
+		<div className='image-gallery-container'>
+			<img className='gallery-images' src={urls.regular} />
 			<a
 				className='credit'
 				target='_blank'
@@ -13,7 +13,7 @@ const PhotoComp = ({ photo }) => {
 			>
 				{user.name}
 			</a>
-		</Fragment>
+		</div>
 	);
 };
 

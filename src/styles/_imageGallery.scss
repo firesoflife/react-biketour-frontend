@@ -12,6 +12,16 @@
 .image-gallery-container {
 	display: flex;
 	flex-direction: column;
+
+	.credit {
+		font-family: $main-font;
+		color: #fff;
+		font-size: 1.4rem;
+
+		&:hover {
+			color: $color-three;
+		}
+	}
 }
 
 .gallery-images {

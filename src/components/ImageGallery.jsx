@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const PhotoComp = ({ photo }) => {
 	const { user, urls } = photo;
@@ -11,7 +11,7 @@ const PhotoComp = ({ photo }) => {
 				target='_blank'
 				href={`https://unsplash.com/@${user.username}`}
 			>
-				{user.name}
+				Photo Credit: {user.name}
 			</a>
 		</div>
 	);

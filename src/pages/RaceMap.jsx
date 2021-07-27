@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { IoBicycleOutline } from 'react-icons/io5';
 import axios from 'axios';
 
 const RaceMap = props => {
@@ -25,14 +26,31 @@ const RaceMap = props => {
 					position={[racerPosition.lat, racerPosition.lng]}
 				>
 					<Popup>
-						<h3>
-							{racerPosition.f_name} {racerPosition.l_name}
-						</h3>
-						{/* <Link to=''>Go to {racerPosition.f_name}'s Bio</Link> */}
-						<Link to={`/racers/profile/${racerPosition.id}`} className='btn'>
-							See <span className='btn-link'> {racerPosition.f_name}'s' </span>
-							Full Profile
-						</Link>
+						<div className='popup__container'>
+							<div className='popup__profile--img'>
+								<div className='profile-container'>
+									<div className='popup-icon'>
+										<IoBicycleOutline />
+										<p>
+											Img <br /> Placeholder
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className='popup__details'>
+								<h3>
+									{racerPosition.f_name} {racerPosition.l_name}
+								</h3>
+								<Link
+									to={`/racers/profile/${racerPosition.id}`}
+									className='btn'
+								>
+									See{' '}
+									<span className='btn-link'> {racerPosition.f_name}'s' </span>
+									Full Profile
+								</Link>
+							</div>
+						</div>
 					</Popup>
 				</Marker>
 			</Fragment>

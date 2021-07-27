@@ -11,7 +11,7 @@
 	text-align: center;
 	color: #ff4e00;
 	padding: 8rem 8rem 1rem 8rem;
-	font-family: $title;
+	font-family: $sub-title;
 	font-size: 3.5rem;
 	text-shadow: 4px 4px 4px #000;
 }
@@ -20,4 +20,66 @@
 	margin: 3rem auto;
 	width: 1000px;
 	height: 500px;
+}
+
+// Popup Styles
+
+.leaflet-popup-content-wrapper {
+	min-width: 30rem !important;
+	background: $color-one;
+}
+
+.popup {
+	width: 20rem;
+	&__container {
+		background: $color-one;
+		padding: 2rem;
+		display: flex;
+		justify-content: space-between;
+
+		.popup-icon {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			svg {
+				color: #fff;
+				width: 3rem;
+				height: 3rem;
+				path {
+					fill: $color-four;
+				}
+			}
+
+			& p {
+				font-size: 1rem;
+				margin: 0;
+			}
+		}
+	}
+
+	&__profile--img {
+		padding: 1.3rem;
+		margin: 1.7rem;
+		margin: auto;
+		background: #333;
+		border-radius: 50%;
+		height: 10rem;
+		width: 10rem;
+	}
+
+	&__details {
+		color: $color-three;
+		font-family: $main-font;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 7%;
+
+		& a {
+			margin-top: 1rem;
+			color: $color-four;
+		}
+	}
 }

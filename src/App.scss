@@ -55,13 +55,15 @@ h2 {
 }
 
 // Font Import
-@import './styles//fonts';
+@import './styles/fonts';
 
 // Page & Component Styles
-@import './styles//navbar';
+@import './styles/navbar';
 @import './styles/landingpage';
 @import './styles/countdown';
 @import './styles/racermap';
 @import './styles/singleRacerProfiles';
 @import './styles/profilecards';
 @import './styles/imageGallery';
+@import './styles/formlayout';
+@import './styles/form';

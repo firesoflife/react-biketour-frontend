@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import CountDown from '../components/CountDown';
+import ContestForm from './ContestForm';
 
 const Home = () => {
 	return (
@@ -22,6 +23,7 @@ const Home = () => {
 				</div>
 			</div>
 			<CountDown />
+			<ContestForm />
 		</Fragment>
 	);
 };

@@ -1,0 +1,46 @@
+.form-container {
+	padding: 5rem;
+	color: #fff;
+	background: $color-two;
+	width: 100%;
+
+	h1 {
+		text-align: center;
+		color: #ff4e00;
+		margin: 2rem 0;
+		font-family: $sub-title;
+		font-size: 3.5vw;
+		text-shadow: 4px 4px 4px #000;
+	}
+
+	h3 {
+		max-width: 50%;
+		font-family: $main-font;
+		color: $color-four;
+		text-align: center;
+		margin: 3rem auto;
+		font-size: 2.4rem;
+	}
+}
+
+.form-box {
+	height: fit-content;
+	width: 65%;
+	border-radius: 10px;
+	background: $color-one;
+	margin: 7rem auto;
+}
+
+.form {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+
+	p.email-remind {
+		color: $color-three;
+		display: flex;
+		justify-content: center;
+		margin: 5rem 10%;
+	}
+}

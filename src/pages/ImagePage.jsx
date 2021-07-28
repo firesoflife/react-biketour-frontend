@@ -14,12 +14,14 @@ const Body = () => {
 	useEffect(() => {
 		api.search
 			.getPhotos({
+				pages: 2,
 				perPage: 20,
 				query: 'bike race',
 				orientation: 'landscape',
 			})
 			.then(result => {
 				setPhotosResponse(result);
+				console.log(result);
 				console.log(api.topics.list);
 			})
 			.catch(() => {

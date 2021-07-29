@@ -16,6 +16,9 @@ const Navbar = () => {
 						<FaAlignRight />
 					</div>
 					<div className='menu'>
+						<NavLink className='navlink' activeClassName='active' to='/'>
+							Home
+						</NavLink>
 						<NavLink className='navlink' activeClassName='active' to='/racers'>
 							Profiles
 						</NavLink>
@@ -29,9 +32,9 @@ const Navbar = () => {
 						<NavLink className='navlink' activeClassName='active' to='/contest'>
 							Contest
 						</NavLink>
-						<NavLink className='navlink' activeClassName='active' to='/about'>
+						{/* <NavLink className='navlink' activeClassName='active' to='/about'>
 							About
-						</NavLink>
+						</NavLink> */}
 					</div>
 				</div>
 			</div>

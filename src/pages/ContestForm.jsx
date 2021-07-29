@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import Form from '../components/Form';
+import FormSuccessAlert from '../components/FormSuccessAlert';
 
 const ContestForm = () => {
 	const [isSubmitted, setIsSubmitted] = useState(false);
@@ -20,7 +21,7 @@ const ContestForm = () => {
 					{!isSubmitted ? (
 						<Form submitForm={submitForm} />
 					) : (
-						<p>Thank You For Your Submission</p>
+						<FormSuccessAlert />
 					)}
 				</div>
 			</div>

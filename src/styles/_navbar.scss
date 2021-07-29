@@ -23,7 +23,7 @@ nav {
 
 .logo {
 	text-decoration: none;
-	color: #ff4e00;
+	color: $color-three;
 }
 
 .navlink {
@@ -32,9 +32,9 @@ nav {
 	padding: 0 1.6rem;
 	height: 100%;
 	cursor: pointer;
-	font-size: 2rem;
+	font-size: 1.8vw;
 	&:active {
-		color: #ff4e00;
+		color: $color-three;
 	}
 }
 

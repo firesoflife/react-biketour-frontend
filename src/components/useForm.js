@@ -10,6 +10,8 @@ const useForm = (callback, validate) => {
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	const handleChange = e => {
+		e.preventDefault();
+		console.log('name:', e.target.name, 'value:', e.target.value);
 		const { name, value } = e.target;
 		setValues({
 			...values,

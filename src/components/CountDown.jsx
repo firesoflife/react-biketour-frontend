@@ -28,7 +28,7 @@ const CountDown = () => {
 
 			if (distance < 0) {
 				// The Day Has Arrived
-				clearInterval(interval.current);
+				// clearInterval(interval.current);
 			} else {
 				// update timer
 				setTimerMonths(months);

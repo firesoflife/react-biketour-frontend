@@ -10,7 +10,7 @@ const ContestSubmissions = () => {
 			.get('http://localhost:4000/slogans')
 			.then(resp => {
 				setSubmission(resp.data);
-				console.log(submission.id);
+				console.log(submission);
 			})
 			.catch(resp => console.log(resp));
 	}, []);
@@ -22,16 +22,12 @@ const ContestSubmissions = () => {
 				id={entry.id}
 				name={entry.name}
 				email={entry.email}
-				slogan={entry.entry}
+				entry={entry.entry}
 			/>
 		);
 	});
 
 	return (
-		// <div>
-		// 	<h1>Look at all the damn Submissions! </h1>
-		// 	<h2>Name: {submission.name}</h2>
-		// </div>
 		<Fragment>
 			<div className='header'>
 				<h1>Choose your Racer!</h1>

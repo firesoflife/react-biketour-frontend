@@ -1,10 +1,14 @@
 import React from 'react';
 
 const Submission = props => {
-	console.log(props.name);
+	console.log(props);
 	return (
 		<div>
-			<h1>A Submission from: {props.name} </h1>
+			<h2>A Submission from: {props.name} </h2>
+			<h2>Email</h2>
+			<p>{props.email}</p>
+			<h2>Slogan:</h2>
+			<p>{props.entry}</p>
 		</div>
 	);
 };

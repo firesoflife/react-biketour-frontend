@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 const FormSuccessAlert = () => {
 	return (
@@ -8,6 +9,7 @@ const FormSuccessAlert = () => {
 					Thanks For Your Submission! Keep an eye on your email for contest
 					announcements{' '}
 				</div>
+				<Button>See Other Entries</Button>
 			</div>
 		</div>
 	);

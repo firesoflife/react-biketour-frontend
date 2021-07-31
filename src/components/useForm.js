@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const useForm = (callback, validate) => {
 	const [values, setValues] = useState({
 		username: '',
 		email: '',
-		slogan: '',
+		entry: '',
 	});
 	const [errors, setErrors] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
@@ -21,6 +22,18 @@ const useForm = (callback, validate) => {
 
 	const handleSubmit = e => {
 		e.preventDefault();
+
+		// TEST AXIOS
+		const data = {
+			name: values.username,
+			email: values.email,
+			entry: values.entry,
+		};
+
+		axios
+			.post('http://localhost:4000/slogans', data)
+			.then(resp => console.log(resp))
+			.catch(resp => console.log(resp));
 
 		setErrors(validate(values));
 		setIsSubmitting(true);

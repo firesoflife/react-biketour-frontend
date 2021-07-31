@@ -24,18 +24,6 @@ const SingleRacerProfile = props => {
 			.catch(resp => console.log(resp));
 	}, []);
 	return (
-		// Working Basic Code
-		// <div className='profile-body'>
-		// 	<div className='profile-container'>
-		// 		<p className='text-test'>
-		// 			{' '}
-		// 			this is {racer.f_name} {racer.l_name}
-		// 		</p>
-		// 		<p className='text-test'>
-		// 			From {racer.city}, {racer.state}
-		// 		</p>
-		// 	</div>
-		// </div>
 		<Fragment>
 			<div className='racer'>
 				<div className='racer__container'>

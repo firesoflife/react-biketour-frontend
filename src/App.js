@@ -10,6 +10,7 @@ import RacerProfiles from './pages/RacerProfiles';
 import SingleRacerProfile from './pages/SingleRacerProfile';
 import ImagePage from './pages/ImagePage';
 import ContestForm from './pages/ContestForm';
+import ContestSubmissions from './pages/ContestSubmissions';
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 				/>
 				<Route path='/gallery' exact component={ImagePage} />
 				<Route path='/contest' exact component={ContestForm} />
+				<Route path='/submissions' exact component={ContestSubmissions} />
 			</Switch>
 		</div>
 	);

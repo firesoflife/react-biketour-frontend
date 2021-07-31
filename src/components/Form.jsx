@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React from 'react';
 import useForm from './useForm';
 import validate from './validtateInfo';
@@ -48,12 +47,12 @@ const Form = ({ submitForm }) => {
 				<textarea
 					className='form-textarea'
 					id='slogan-text'
-					name='slogan'
+					name='entry'
 					placeholder='Enter your slogan and hit "submit"'
-					value={values.slogan}
+					value={values.entry}
 					onChange={handleChange}
 				></textarea>
-				{errors.slogan && <p className='form-error'>{errors.slogan}</p>}
+				{errors.entry && <p className='form-error'>{errors.entry}</p>}
 
 				<button className='form-input-btn btn'>Submit</button>
 				<p className='email-remind'>

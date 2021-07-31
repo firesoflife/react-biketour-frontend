@@ -3,8 +3,6 @@ import ImageGallery from '../components/ImageGallery';
 import { createApi } from 'unsplash-js';
 
 const api = createApi({
-	// Don't forget to set your access token here!
-	// See https://unsplash.com/developers
 	accessKey: 'SJoYwh9wRf56F4ikb9bYYtCNHDrxtg8pKP57HXgtY64',
 });
 

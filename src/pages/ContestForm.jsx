@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 import Form from '../components/Form';
 import FormSuccessAlert from '../components/FormSuccessAlert';
 
@@ -23,6 +25,13 @@ const ContestForm = () => {
 					) : (
 						<FormSuccessAlert />
 					)}
+				</div>
+				<div className='submissions'>
+					<Link to='/submissions'>
+						<Button tye='button' buttonStyle='btn__primary--outline'>
+							See Entries
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</Fragment>

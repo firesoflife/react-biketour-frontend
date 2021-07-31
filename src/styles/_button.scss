@@ -1,0 +1,63 @@
+$primary: #ff4e00;
+$warning: #f6b352;
+$danger: #7c1b0a;
+$success: #1f21;
+$white: #ccc;
+$dark: #1f2124;
+
+.main-btn {
+	font-family: $main-font;
+	font-weight: 400;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: transform all 0.3s ease;
+
+	&:hover {
+		transform: translateY(-3px);
+	}
+}
+
+.btn__primary--solid {
+	background: $primary;
+	color: $white;
+	border: none;
+}
+.btn__warning--solid {
+	background: $warning;
+	color: $dark;
+	border: none;
+}
+.btn__danger--solid {
+	background: $danger;
+	color: $white;
+	border: none;
+}
+.btn__success--solid {
+	background: $success;
+	color: $primary;
+	border: none;
+}
+
+.btn__primary--outline {
+	background: transparent;
+	color: $white;
+	border: 2px solid $warning;
+
+	&:hover {
+		background: $warning;
+		color: #fff;
+		transition: transform all 0.5s ease-in-out;
+	}
+}
+
+// Button Sizes
+
+.btn-medium {
+	padding: 1rem 2rem;
+	font-size: 1.8rem;
+}
+
+.btn-small {
+	padding: 0.8rem 1.7rem;
+	font-size: 1.6rem;
+}

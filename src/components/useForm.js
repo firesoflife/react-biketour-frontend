@@ -23,7 +23,7 @@ const useForm = (callback, validate) => {
 	const handleSubmit = e => {
 		e.preventDefault();
 
-		// TEST AXIOS
+		// AXIOS
 		const data = {
 			name: values.username,
 			email: values.email,

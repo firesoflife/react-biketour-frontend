@@ -13,9 +13,9 @@ const ContestSubmissions = () => {
 				console.log(submission);
 			})
 			.catch(resp => console.log(resp));
-	}, []);
+	}, [submission.length]);
 
-	const grid = submission.map(entry => {
+	const contestEntry = submission.map(entry => {
 		return (
 			<Submission
 				key={entry.id}
@@ -30,12 +30,13 @@ const ContestSubmissions = () => {
 	return (
 		<Fragment>
 			<div className='header'>
-				<h1>Choose your Racer!</h1>
+				<h1>Contest Submissions</h1>
 				<div className='subheader'>
-					Track the location of your favourite racer and get their bios!
+					Check out the latest submissions! What slogan do you think we should
+					have?!
 				</div>
-				<div className='card-page'>
-					<div className='grid'>{grid}</div>
+				<div className='slogan-container'>
+					<div className='slogan-grid'>{contestEntry}</div>
 				</div>
 			</div>
 		</Fragment>

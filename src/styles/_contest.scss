@@ -1,0 +1,28 @@
+.slogan-container {
+	max-width: 80%;
+	background: white;
+	margin: auto;
+}
+
+.submission-inner {
+	font: 1em sans-serif;
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	text-align: left;
+}
+
+.submission-name {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background: #000;
+	width: 60%;
+	height: 10rem;
+	padding: 2rem;
+}
+
+.submission-slogan {
+	width: 100%;
+	background: #ccc;
+	padding: 2rem;
+}

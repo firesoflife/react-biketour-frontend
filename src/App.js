@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
 // Components
@@ -11,11 +12,19 @@ import SingleRacerProfile from './pages/SingleRacerProfile';
 import ImagePage from './pages/ImagePage';
 import ContestForm from './pages/ContestForm';
 import ContestSubmissions from './pages/ContestSubmissions';
+import MobileNav from './components/MobileNav';
 
 function App() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
+
 	return (
 		<div className='App'>
-			<Navbar />
+			<Navbar toggle={toggle} />
+			<MobileNav isOpen={isOpen} toggle={toggle} />
 			<Switch>
 				<Route path='/' exact component={Home} />
 				<Route path='/about' exact component={About} />

@@ -38,7 +38,7 @@ const Body = () => {
 		);
 	} else {
 		return (
-			<div className='photopage-container'>
+			<div className='photopage-container' id='gallery'>
 				<div className='photo-grid'>
 					{data.response.results.map(photo => (
 						<div key={photo.id} className='images'>

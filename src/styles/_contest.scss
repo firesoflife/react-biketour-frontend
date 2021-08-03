@@ -1,28 +1,44 @@
+.slogan-grid {
+	width: 100%;
+	box-shadow: 0px 0px 0px;
+}
+
 .slogan-container {
-	max-width: 80%;
-	background: white;
-	margin: auto;
-}
-
-.submission-inner {
-	font: 1em sans-serif;
 	width: 100%;
+	background: $color-two;
 	display: flex;
-	justify-content: start;
-	text-align: left;
+	margin: 2rem 0;
+
+	h3 {
+		font-size: 1.8rem;
+	}
 }
 
-.submission-name {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	background: #000;
-	width: 60%;
-	height: 10rem;
-	padding: 2rem;
-}
-
-.submission-slogan {
+.slogan-wrapper {
+	box-shadow: 3px 3px 3px #000;
 	width: 100%;
-	background: #ccc;
+}
+
+.entry-name {
+	color: $color-four;
+}
+
+.slogan-left {
+	font-family: $sub-title;
 	padding: 2rem;
+	min-width: 30%;
+	background: $color-one;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	text-align-last: left;
+}
+
+.slogan-right {
+	font-size: 1.6rem;
+	font-family: $sub-title;
+	padding: 2rem;
+	background: #333;
+	width: 100%;
+	text-align-last: left;
 }

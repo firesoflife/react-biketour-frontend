@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaAlignRight } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
 	return (
 		<nav>
 			<div className='nav-container'>
@@ -12,7 +12,7 @@ const Navbar = () => {
 					</NavLink>
 				</div>
 				<div className='nav-right'>
-					<div className='bars'>
+					<div className='bars' onClick={toggle}>
 						<FaAlignRight />
 					</div>
 					<div className='menu'>

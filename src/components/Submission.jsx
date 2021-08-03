@@ -3,20 +3,16 @@ import React, { Fragment } from 'react';
 const Submission = props => {
 	console.log(props);
 	return (
-		// <div>
-		// 	<h2>A Submission from: {props.name} </h2>
-		// 	<h2>Email</h2>
-		// 	<p>{props.email}</p>
-		// 	<h2>Slogan:</h2>
-		// 	<p>{props.entry}</p>
-		// </div>
 		<Fragment>
-			<div className='submission-inner'>
-				<div className='submission-name'>
-					<h3>{props.name}</h3>
-				</div>
-				<div className='submission-slogan'>
-					<h3>{props.entry}</h3>
+			<div className='slogan-container'>
+				<div className='slogan-wrapper'>
+					<div className='slogan-left'>
+						<h3>Sumbmission from:</h3>
+						<h3 className='entry-name'>{props.name}</h3>
+					</div>
+					<div className='slogan-right'>
+						<h4 className='entry-name'>" {props.entry} "</h4>
+					</div>
 				</div>
 			</div>
 		</Fragment>

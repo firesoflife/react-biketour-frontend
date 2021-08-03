@@ -5,7 +5,7 @@ import ContestForm from './ContestForm';
 const Home = () => {
 	return (
 		<Fragment>
-			<div className='section-body'>
+			<div className='section-body' id='home'>
 				<div className='background'>
 					<div className='title-background'></div>
 					<div className='title-content'>

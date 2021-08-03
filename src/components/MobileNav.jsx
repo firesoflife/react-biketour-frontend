@@ -4,10 +4,11 @@ import { Link as Links } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 
 const MobileNav = ({ isOpen, toggle }) => {
+	const nodeRef = React.useRef(null);
 	return (
 		<div className='global'>
 			<MobileMenuContainer isOpen={isOpen} onClick={toggle}>
-				<Icon onClick={toggle}>
+				<Icon onClick={toggle} ref={nodeRef}>
 					<CloseIcon />
 				</Icon>
 				<MobileMenuWrapper>

@@ -7,7 +7,8 @@ const RacerProfiles = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://localhost:4000/racers')
+			// .get('http://localhost:4000/racers')
+			.get('https://peaceful-atoll-77526.herokuapp.com/racers')
 			.then(resp => {
 				setRacers(resp.data);
 			})

@@ -9,8 +9,8 @@ const RaceMap = props => {
 
 	useEffect(() => {
 		axios
-			// .get('/api/v1/racers.json')
-			.get('http://localhost:4000/racers')
+			// .get('http://localhost:4000/racers')
+			.get('https://peaceful-atoll-77526.herokuapp.com/racers')
 			.then(resp => {
 				setPosition(resp.data);
 				// console.log(resp.data);

@@ -7,6 +7,7 @@ $color-three: #ff4e00;
 $color-four: #f6b352;
 
 .header {
+	min-height: 100vh;
 	background: $color-two;
 	font-family: $main-font;
 	text-align: center;

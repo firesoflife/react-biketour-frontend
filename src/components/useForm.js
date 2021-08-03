@@ -31,7 +31,8 @@ const useForm = (callback, validate) => {
 		};
 
 		axios
-			.post('http://localhost:4000/slogans', data)
+			// .post('http://localhost:4000/slogans', data)
+			.post('https://peaceful-atoll-77526.herokuapp.com/slogans', data)
 			.then(resp => console.log(resp))
 			.catch(resp => console.log(resp));
 

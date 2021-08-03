@@ -14,7 +14,8 @@ const SingleRacerProfile = props => {
 
 	useEffect(() => {
 		const id = props.match.params.id;
-		const url = `http://localhost:4000/racers/${id}`;
+		// const url = `http://localhost:4000/racers/${id}`;
+		const url = `https://peaceful-atoll-77526.herokuapp.com/racers${id}`;
 
 		axios
 			.get(url)

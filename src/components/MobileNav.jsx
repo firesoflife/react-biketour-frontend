@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link as Links } from 'react-scroll';
+import { Link as Links } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 
 const MobileNav = ({ isOpen, toggle }) => {
@@ -12,21 +12,21 @@ const MobileNav = ({ isOpen, toggle }) => {
 				</Icon>
 				<MobileMenuWrapper>
 					<MobileMenu>
-						<MobileMenuLink to='home' onClick={toggle}>
+						<Link to='/' onClick={toggle}>
 							Home
-						</MobileMenuLink>
-						<MobileMenuLink to='profiles' onClick={toggle}>
+						</Link>
+						<Link to='/racers' onClick={toggle}>
 							Profiles
-						</MobileMenuLink>
-						<MobileMenuLink to='map' onClick={toggle}>
+						</Link>
+						<Link to='map' onClick={toggle}>
 							Map
-						</MobileMenuLink>
-						<MobileMenuLink to='gallery' onClick={toggle}>
+						</Link>
+						<Link to='gallery' onClick={toggle}>
 							Gallery
-						</MobileMenuLink>
-						<MobileMenuLink to='contest' onClick={toggle}>
+						</Link>
+						<Link to='contest' onClick={toggle}>
 							Contest
-						</MobileMenuLink>
+						</Link>
 					</MobileMenu>
 				</MobileMenuWrapper>
 			</MobileMenuContainer>
@@ -78,7 +78,7 @@ export const MobileMenu = styled.ul`
 	}
 `;
 
-export const MobileMenuLink = styled(Links)`
+export const Link = styled(Links)`
 	display: flex;
 	align-items: center;
 	justify-content: center;

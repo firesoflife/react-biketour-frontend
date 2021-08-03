@@ -29,7 +29,7 @@ const RacerProfiles = () => {
 
 	return (
 		<Fragment>
-			<div className='header'>
+			<div className='header' id='profiles'>
 				<h1>Choose your Racer!</h1>
 				<div className='subheader'>
 					Track the location of your favourite racer and get their bios!

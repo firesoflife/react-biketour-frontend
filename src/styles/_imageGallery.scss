@@ -25,5 +25,26 @@
 }
 
 .gallery-images {
-	max-width: 90%;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.photopage-container .photo-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.image-gallery-container {
+		align-items: center;
+	}
+
+	.photopage-container {
+		text-align: center;
+	}
+
+	.photopage-container .photo-grid {
+		display: flex;
+		flex-direction: column;
+	}
 }

@@ -7,7 +7,8 @@ const ContestSubmissions = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://localhost:4000/slogans')
+			// .get('http://localhost:4000/slogans')
+			.get('https://peaceful-atoll-77526.herokuapp.com/slogans')
 			.then(resp => {
 				setSubmission(resp.data);
 				console.log(submission);

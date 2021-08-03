@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ImageGallery from '../components/ImageGallery';
 import { createApi } from 'unsplash-js';
 
-const api = createApi({
-	accessKey: 'SJoYwh9wRf56F4ikb9bYYtCNHDrxtg8pKP57HXgtY64',
-});
+const api = createApi({ accessKey: process.env.REACT_APP_UNSPLASH_API_KEY });
 
 const Body = () => {
 	const [data, setPhotosResponse] = useState(null);

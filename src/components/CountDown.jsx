@@ -44,7 +44,7 @@ const CountDown = () => {
 	useEffect(() => {
 		startTimer();
 		return () => {
-			clearInterval(interval.current);
+			clearInterval(interval);
 		};
 	});
 	return (
